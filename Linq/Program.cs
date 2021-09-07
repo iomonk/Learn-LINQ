@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Linq.Factories;
 using Linq.LinqMethods;
 
@@ -12,23 +13,33 @@ namespace Linq
             var listOfPeople = MakePeopleFactory.MakePeople();
             
             Console.WriteLine("Choose a Linq Method");
-            Console.WriteLine("Option\t Method Name\t Type of Method");
-            Console.WriteLine("---------------------------------------");
-            Console.WriteLine($"1 \t OrderBy \t Deferred");
-            Console.WriteLine($"2 \t Select \t Deferred");
+            Console.WriteLine($"{"Option".PadRight(8, ' ')} {"Method Name".PadRight(13, ' ')} {"Type of Method".PadRight(17, ' ')}");
+            Console.WriteLine("-------------------------------------");
+            Console.WriteLine($"{"1".PadRight(8, ' ')} {"OrderBy".PadRight(13, ' ')} {"Deferred".PadRight(17, ' ')}");
+            Console.WriteLine($"{"2".PadRight(8, ' ')} {"Where".PadRight(13, ' ')} {"Deferred".PadRight(17, ' ')}");
+            Console.WriteLine($"{"3".PadRight(8, ' ')} {"Sum".PadRight(13, ' ')} {"Iterative".PadRight(17, ' ')}");
 
             var choice = Console.ReadLine();
+            Console.WriteLine();
+            
+            Console.WriteLine("The list before the any of the methods are applied");
+            var personList = listOfPeople.ToList();
+            foreach (var p in personList)
+            {
+                Console.WriteLine($"ID: {p.Id}\t First Name: {p.FirstName}\t Last Name: {p.LastName}\t Age: {p.Age} \t Location: {p.Location}");
+            }
+            Console.WriteLine();
             
             switch (choice)
             {
                 case "1":
-                    LinqOrderBy.OrderByMethod(listOfPeople);
+                    LinqOrderBy.OrderByMethod(personList);
                     break;
                 case "2":
-                    LinqWhere.WhereMethod(listOfPeople);
+                    LinqWhere.WhereMethod(personList);
                     break;
                 case "3":
-                    Console.WriteLine("Make a choice");
+                    LinqSum.SumMethod(personList);
                     break;
                 case "4":
                     Console.WriteLine("Make a choice");
