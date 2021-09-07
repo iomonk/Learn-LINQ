@@ -36,5 +36,16 @@ namespace Linq.Factories
                 Description = "Computes the sum of a sequence of numeric values."
             };
         }
+        
+        public static MethodOptions OfTypeOption()
+        {
+            return new MethodOptions()
+            {
+                Id = "4",
+                Name = "OfType",
+                Type = "Deferred",
+                Description = "Filters the elements of an IEnumerable based on a specified type (string, int, Person, etc...)"
+            };
+        }
     }
 }

@@ -34,6 +34,7 @@ namespace Linq
             Console.WriteLine($"{MethodOptionsFactory.OrderByOption().Id.PadRight(8, ' ')} {MethodOptionsFactory.OrderByOption().Name.PadRight(13, ' ')} {MethodOptionsFactory.OrderByOption().Type.PadRight(16, ' ')} {MethodOptionsFactory.OrderByOption().Description} ");
             Console.WriteLine($"{MethodOptionsFactory.WhereOption().Id.PadRight(8, ' ')} {MethodOptionsFactory.WhereOption().Name.PadRight(13, ' ')} {MethodOptionsFactory.WhereOption().Type.PadRight(16, ' ')} {MethodOptionsFactory.WhereOption().Description} ");
             Console.WriteLine($"{MethodOptionsFactory.SumOption().Id.PadRight(8, ' ')} {MethodOptionsFactory.SumOption().Name.PadRight(13, ' ')} {MethodOptionsFactory.SumOption().Type.PadRight(16, ' ')} {MethodOptionsFactory.SumOption().Description} ");
+            Console.WriteLine($"{MethodOptionsFactory.OfTypeOption().Id.PadRight(8, ' ')} {MethodOptionsFactory.OfTypeOption().Name.PadRight(13, ' ')} {MethodOptionsFactory.OfTypeOption().Type.PadRight(16, ' ')} {MethodOptionsFactory.OfTypeOption().Description} ");
         }
         
         private static void DisplayOriginalList(IEnumerable<Person> people)
@@ -61,7 +62,7 @@ namespace Linq
                     LinqSum.SumMethod(people);
                     break;
                 case "4":
-                    Console.WriteLine("4");
+                    LinqOfType.OfTypeMethod(people);
                     break;
                 case "5":
                     Console.WriteLine("5");

@@ -8,7 +8,7 @@ namespace Linq.LinqMethods
     public static class LinqXxx
     {
         // strings used throughout the LinqXxx Class
-        private const string AfterXxxStr = "The list After the 'Xxx' method is applied. Shows the sum of all the ages.";
+        private const string AfterXxxStr = "The list After the 'Xxx' method is applied.";
         
         public static void XxxMethod(IEnumerable<Person> personList)
         {
