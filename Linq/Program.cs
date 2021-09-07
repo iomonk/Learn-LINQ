@@ -11,8 +11,40 @@ namespace Linq
             // Gets the list of 100 random people from the MakePeopleFactory.
             var listOfPeople = MakePeopleFactory.MakePeople();
             
-            // OrderBy - Sorts the elements of a sequence in ascending order.
-            LinqOrderBy.OrderByMethod(listOfPeople);
+            Console.WriteLine("Choose a Linq Method");
+            Console.WriteLine("Option\t Method Name\t Type of Method");
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("1 \t OrderBy \t Deferred");
+            
+            var choice = Console.ReadLine();
+            
+            switch (choice)
+            {
+                case "1":
+                    LinqOrderBy.OrderByMethod(listOfPeople);
+                    break;
+                case "2":
+                    Console.WriteLine("Make a choice");
+                    break;
+                case "3":
+                    Console.WriteLine("Make a choice");
+                    break;
+                case "4":
+                    Console.WriteLine("Make a choice");
+                    break;
+                case "5":
+                    Console.WriteLine("Make a choice");
+                    break;
+                case "6":
+                    Console.WriteLine("Make a choice");
+                    break;
+                case "7":
+                    Console.WriteLine("Make a choice");
+                    break;
+                default:
+                    Console.WriteLine("Make a choice");
+                    break;
+            }
         }
     }
 }
