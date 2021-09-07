@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Linq;
 using Linq.Factories;
+using Linq.LinqMethods;
 
 namespace Linq
 {
@@ -8,14 +8,11 @@ namespace Linq
     {
         private static void Main()
         {
-            // Get the list of 100 people
+            // Gets the list of 100 random people from the MakePeopleFactory.
             var listOfPeople = MakePeopleFactory.MakePeople();
             
-            // listOfPeople.Aggregate("", (acc, p) => acc + p.LastName + ", ").Trim(' ', ',')
-            // string.Join(", ", listOfPeople.Select(p => p.LastName))
-
-            // Prevent console from closing when completed
-            Console.ReadLine();
+            // OrderBy - Sorts the elements of a sequence in ascending order.
+            LinqOrderBy.OrderByMethod(listOfPeople);
         }
     }
 }
