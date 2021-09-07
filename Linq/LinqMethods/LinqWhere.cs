@@ -8,6 +8,7 @@ namespace Linq.LinqMethods
 {
     public static class LinqWhere
     {
+        // strings used throughout the LinqWhere Class
         private const string AfterWhereStr = "The list after the 'Select' method is applied to filter ages greater than 50";
         private const string AfterWhereWithAndStr = "The list after the 'Select' method is applied to filter ages greater than 50 AND ID is less than 50";
         

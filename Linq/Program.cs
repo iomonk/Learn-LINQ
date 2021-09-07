@@ -10,6 +10,7 @@ namespace Linq
 {
     internal static class Program
     {
+        // strings used throughout the Program Class
         private const string Choose = "Choose a Linq Method";
         private const string MenuLines = "---------------------------------------------------";
         private static readonly string[] Menu = new[] {"Option", "Method Name", "Type of Method", "Description"};
