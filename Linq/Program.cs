@@ -14,8 +14,9 @@ namespace Linq
             Console.WriteLine("Choose a Linq Method");
             Console.WriteLine("Option\t Method Name\t Type of Method");
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine("1 \t OrderBy \t Deferred");
-            
+            Console.WriteLine($"1 \t OrderBy \t Deferred");
+            Console.WriteLine($"2 \t Select \t Deferred");
+
             var choice = Console.ReadLine();
             
             switch (choice)
@@ -24,7 +25,7 @@ namespace Linq
                     LinqOrderBy.OrderByMethod(listOfPeople);
                     break;
                 case "2":
-                    Console.WriteLine("Make a choice");
+                    LinqWhere.WhereMethod(listOfPeople);
                     break;
                 case "3":
                     Console.WriteLine("Make a choice");
