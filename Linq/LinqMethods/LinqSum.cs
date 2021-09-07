@@ -10,10 +10,6 @@ namespace Linq.LinqMethods
         public static void SumMethod(IEnumerable<Person> personList)
         {
             var personToList = personList.ToList();
-            
-            Console.WriteLine("Sum - Computes the sum of a sequence of numeric values.");
-            Console.WriteLine();
-            
             AfterSum(personToList);
         }
         

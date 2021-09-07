@@ -4,6 +4,7 @@ using Linq.Models;
 
 namespace Linq.Factories
 {
+    // Gets the list of 100 random people from the MakePeopleFactory.
     public static class MakePeopleFactory
     {
         private static readonly string[] FirstNames =
