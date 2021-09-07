@@ -61,16 +61,16 @@ namespace Linq
                     LinqSum.SumMethod(people);
                     break;
                 case "4":
-                    Console.WriteLine("Make a choice");
+                    Console.WriteLine("4");
                     break;
                 case "5":
-                    Console.WriteLine("Make a choice");
+                    Console.WriteLine("5");
                     break;
                 case "6":
-                    Console.WriteLine("Make a choice");
+                    Console.WriteLine("6");
                     break;
                 case "7":
-                    Console.WriteLine("Make a choice");
+                    Console.WriteLine("7");
                     break;
                 default:
                     Console.WriteLine("Make a choice");

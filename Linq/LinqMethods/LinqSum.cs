@@ -8,18 +8,27 @@ namespace Linq.LinqMethods
     public static class LinqSum
     {
         // strings used throughout the LinqSum Class
-        private const string AfterSumStr = "The list After the 'Sum' method is applied. Shows the sum of all the ages.";
+        private const string AfterAgesStr = "The list After the 'Sum' method is applied. Shows the sum of all the ages.";
+        private const string AfterIdsStr = "The list After the 'Sum' method is applied. Shows the sum of all the Ids.";
         
         public static void SumMethod(IEnumerable<Person> personList)
         {
             var personToList = personList.ToList();
-            AfterSum(personToList);
+            AfterAgesSum(personToList);
+            AfterIdsSum(personToList);
         }
         
-        private static void AfterSum(IEnumerable<Person> personList)
+        private static void AfterAgesSum(IEnumerable<Person> personList)
         {
-            Console.WriteLine(AfterSumStr);
+            Console.WriteLine(AfterAgesStr);
             var summedAges = personList.Sum(x => x.Age);
+            Console.WriteLine(summedAges);
+        }
+        
+        private static void AfterIdsSum(IEnumerable<Person> personList)
+        {
+            Console.WriteLine(AfterIdsStr);
+            var summedAges = personList.Sum(x => x.Id);
             Console.WriteLine(summedAges);
         }
     }
