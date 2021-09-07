@@ -11,7 +11,7 @@ namespace Linq.LinqMethods
         // strings used throughout the LinqOfType Class
         private const string AfterOfTypeStr = "The list After the 'OfType' method is applied. The list is unchanged because all objects are already of type 'Person'";
         private const string AfterOfBetterExampleStr = "An object is created with the following items { 1, \"3\", \"Some other string\", 10 }";
-        
+        private const string AfterOfBetterExampleStrTwo = "Running 'OfType<string>' on the object will only grab '3' and 'Some other string'";
         
         public static void OfTypeMethod(IEnumerable<Person> personList)
         {
@@ -37,7 +37,7 @@ namespace Linq.LinqMethods
             Console.WriteLine(AfterOfBetterExampleStr);
             var array = new object[] {1, "3", "Some other string", 10};
             
-            Console.WriteLine("Running 'OfType<string>' on the object will only grab '3' and 'Some other string'");
+            Console.WriteLine(AfterOfBetterExampleStrTwo);
             var afterOfType = array.OfType<string>();
             
             foreach (var item in afterOfType)
