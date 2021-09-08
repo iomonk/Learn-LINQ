@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using Linq.Models;
 
-namespace Linq.Factories
+namespace Linq.Service
 {
     // Gets the list of 100 random people from the MakePeopleFactory.
-    public static class MakePeopleFactory
+    public static class PersonListService
     {
         private static readonly string[] FirstNames =
         {

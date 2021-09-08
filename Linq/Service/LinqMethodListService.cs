@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using Linq.Models;
 
-namespace Linq.Factories
+namespace Linq.Service
 {
-    public static class MethodOptionsFactory
+    public static class LinqMethodListService
     {
         private static readonly List<MethodOptions> MethodOptionsList = new()
         {
