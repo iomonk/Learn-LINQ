@@ -8,9 +8,8 @@ namespace Linq.LinqMethods
 {
     public static class LinqOfType
     {
-        // strings used throughout the LinqOfType Class
         private const string AfterOfTypeStr =
-            "The list After the 'OfType' method is applied. The list is unchanged because all objects are already of type 'Person'";
+            "The list after the 'OfType' method is applied. The list is unchanged because all objects are already of type 'Person'";
 
         private const string AfterOfBetterExampleStr =
             "An object is created with the following items { 1, \"3\", \"Some other string\", 10 }";

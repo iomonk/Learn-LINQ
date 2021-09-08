@@ -7,19 +7,17 @@ namespace Linq.LinqMethods
 {
     public static class LinqXxx
     {
-        // strings used throughout the LinqXxx Class
-        private const string AfterXxxStr = "The list After the 'Xxx' method is applied.";
+        private const string AfterXxxStr = "The list after the 'Xxx' method is applied.";
 
         public static void XxxMethod(IEnumerable<Person> personList)
         {
-            var personToList = personList.ToList();
-            AfterXxx(personToList);
+            AfterXxx(personList);
         }
 
         private static void AfterXxx(IEnumerable<Person> personList)
         {
             Console.WriteLine(AfterXxxStr);
-            var result = personList.Sum(x => x.Age);
+            var result = personList;
             Console.WriteLine(result);
         }
     }

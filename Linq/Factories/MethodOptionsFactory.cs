@@ -42,7 +42,35 @@ namespace Linq.Factories
                 Name = "Select",
                 Type = "Deferred",
                 Description = "Projects each element of a sequence into a new form."
-            }
+            },
+            new MethodOptions
+            {
+                Id = "6",
+                Name = "Average",
+                Type = "Iterative",
+                Description = "Computes the average of a sequence of numeric values."
+            },
+            new MethodOptions
+            {
+                Id = "7",
+                Name = "Count",
+                Type = "Iterative",
+                Description = "Returns the number of elements in a sequence."
+            },
+            new MethodOptions
+            {
+                Id = "8",
+                Name = "Max",
+                Type = "Iterative",
+                Description = "Returns the maximum value in a sequence of values."
+            },
+            new MethodOptions
+            {
+                Id = "9",
+                Name = "Min",
+                Type = "Iterative",
+                Description = "Returns the minimum value in a sequence of values."
+            },
         };
 
         public static List<MethodOptions> ListOfMethods()

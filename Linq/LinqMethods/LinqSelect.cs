@@ -7,9 +7,8 @@ namespace Linq.LinqMethods
 {
     public static class LinqSelect
     {
-        // strings used throughout the LinqSelect Class
         private const string AfterSelectStr =
-            "The list After the 'Select' method is applied. Creates a new list of your selected elements. In this case LastName, FirstName";
+            "The list after the 'Select' method is applied. Creates a new list of your selected elements. In this case LastName, FirstName";
 
         public static void SelectMethod(IEnumerable<Person> personList)
         {

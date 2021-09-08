@@ -8,7 +8,6 @@ namespace Linq.LinqMethods
 {
     public static class LinqOrderBy
     {
-        // strings used throughout the LinqOrderBy Class
         private const string AfterOrderByStr =
             "The list after the 'OrderBy' method is applied. Sorts the list by Last Name in ascending order.";
 

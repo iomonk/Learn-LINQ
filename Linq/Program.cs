@@ -10,7 +10,6 @@ namespace Linq
 {
     internal static class Program
     {
-        // strings used throughout the Program Class
         private const string Choose = "Choose a Linq Method";
         private const string MenuLines = "---------------------------------------------------";
         private const string OriginalList = "The list before the any of the methods are applied";
@@ -64,9 +63,27 @@ namespace Linq
                     LinqSelect.SelectMethod(people);
                     break;
                 case "6":
-                    Console.WriteLine("6");
+                    LinqAverage.AverageMethod(people);
                     break;
                 case "7":
+                    LinqCount.CountMethod(people);
+                    break;
+                case "8":
+                    LinqMax.MaxMethod(people);
+                    break;
+                case "9":
+                    LinqMin.MinMethod(people);
+                    break;
+                case "10":
+                    Console.WriteLine("7");
+                    break;
+                case "11":
+                    Console.WriteLine("7");
+                    break;
+                case "12":
+                    Console.WriteLine("7");
+                    break;
+                case "13":
                     Console.WriteLine("7");
                     break;
                 default:
