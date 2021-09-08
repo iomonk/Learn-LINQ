@@ -28,7 +28,6 @@ namespace Linq.LinqMethods
         {
             Console.WriteLine(AfterOfTypeStr);
             var afterOfType = personList.OfType<Person>();
-
             foreach (var p in afterOfType) WriteLineService.WriteLine(p);
             Console.WriteLine();
         }
@@ -37,10 +36,9 @@ namespace Linq.LinqMethods
         {
             Console.WriteLine(AfterOfBetterExampleStr);
             var array = new object[] {1, "3", "Some other string", 10};
-
+            
             Console.WriteLine(AfterOfBetterExampleStrTwo);
             var afterOfType = array.OfType<string>();
-
             foreach (var item in afterOfType) Console.Write($"{item} ");
             Console.WriteLine();
         }

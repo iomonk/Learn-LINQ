@@ -19,7 +19,6 @@ namespace Linq.LinqMethods
         {
             Console.WriteLine(AfterSelectStr);
             var result = personList.Select(x => $"{x.LastName}, {x.FirstName}");
-
             foreach (var p in result) Console.WriteLine(p);
             Console.WriteLine();
         }
@@ -29,7 +28,6 @@ namespace Linq.LinqMethods
         {
             Console.WriteLine(AfterSelectStr);
             var result = personList.Select(LastAndFirstNameFunction);
-
             foreach (var p in result) Console.WriteLine(p);
             Console.WriteLine();
         }

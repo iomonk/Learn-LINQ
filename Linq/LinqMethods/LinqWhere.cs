@@ -25,7 +25,6 @@ namespace Linq.LinqMethods
         {
             Console.WriteLine(AfterWhereStr);
             var afterWhere = personList.Where(x => x.Age > 50);
-
             foreach (var p in afterWhere) WriteLineService.WriteLine(p);
             Console.WriteLine();
         }
@@ -34,7 +33,6 @@ namespace Linq.LinqMethods
         {
             Console.WriteLine(AfterWhereWithAndStr);
             var afterWhere = personList.Where(x => x.Age > 50 && x.Id < 50);
-
             foreach (var p in afterWhere) WriteLineService.WriteLine(p);
             Console.WriteLine();
         }

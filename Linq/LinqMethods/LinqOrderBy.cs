@@ -33,7 +33,6 @@ namespace Linq.LinqMethods
         {
             Console.WriteLine(AfterOrderByStr);
             var persons = personList.OrderBy(x => x.LastName);
-
             foreach (var p in persons) WriteLineService.WriteLine(p);
             Console.WriteLine();
         }
@@ -42,7 +41,6 @@ namespace Linq.LinqMethods
         {
             Console.WriteLine(AfterOrderByDescStr);
             var persons = personList.OrderByDescending(x => x.LastName);
-
             foreach (var p in persons) WriteLineService.WriteLine(p);
             Console.WriteLine();
         }
@@ -51,7 +49,6 @@ namespace Linq.LinqMethods
         {
             Console.WriteLine(AfterOrderByChainedStr);
             var persons = personList.OrderBy(x => x.LastName).ThenBy(x => x.FirstName);
-
             foreach (var p in persons) WriteLineService.WriteLine(p);
             Console.WriteLine();
         }
@@ -60,7 +57,6 @@ namespace Linq.LinqMethods
         {
             Console.WriteLine(AfterOrderByDescChainedStr);
             var persons = personList.OrderByDescending(x => x.LastName).ThenByDescending(x => x.FirstName);
-
             foreach (var p in persons) WriteLineService.WriteLine(p);
             Console.WriteLine();
         }
