@@ -92,6 +92,62 @@ namespace Linq.Factories
                 Type = "Deferred",
                 Description = "Creates a Dictionary<TKey,TValue> from an IEnumerable<T>."
             },
+            new MethodOptions
+            {
+                Id = "13",
+                Name = "ElementAt",
+                Type = "Deferred",
+                Description = "Returns the element at a specified index in a sequence."
+            },
+            new MethodOptions
+            {
+                Id = "14",
+                Name = "First",
+                Type = "Iterative",
+                Description = "Returns the first element of a sequence."
+            },
+            new MethodOptions
+            {
+                Id = "15",
+                Name = "FirstOrDefault",
+                Type = "Iterative",
+                Description = "Returns the first element of a sequence, or a default value if no element is found."
+            },
+            new MethodOptions
+            {
+                Id = "16",
+                Name = "Last",
+                Type = "Iterative",
+                Description = "Returns the last element of a sequence."
+            },
+            new MethodOptions
+            {
+                Id = "17",
+                Name = "LastOrDefault",
+                Type = "Iterative",
+                Description = "Returns the last element of a sequence, or a default value if no element is found."
+            },
+            new MethodOptions
+            {
+                Id = "18",
+                Name = "xxx",
+                Type = "xxx",
+                Description = "xxx"
+            },
+            new MethodOptions
+            {
+                Id = "19",
+                Name = "xxx",
+                Type = "xxx",
+                Description = "xxx"
+            },
+            new MethodOptions
+            {
+                Id = "20",
+                Name = "xxx",
+                Type = "xxx",
+                Description = "xxx"
+            }
         };
 
         public static List<MethodOptions> ListOfMethods()

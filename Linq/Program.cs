@@ -13,14 +13,14 @@ namespace Linq
         private const string Choose = "Choose a Linq Method";
         private const string MenuLines = "---------------------------------------------------";
         private const string OriginalList = "The list before the any of the methods are applied";
-        private static readonly string[] Menu = {"Option", "Method Name", "Type of Method", "Description"};
         private const string Exit = "Press any key to exit.";
+        private static readonly string[] Menu = {"Option", "Method Name", "Type of Method", "Description"};
 
         private static void Main()
         {
             var listOfPeople = MakePeopleFactory.MakePeople().ToList();
             MainMenu();
-            var choice = Console.ReadLine();
+            var choice = int.Parse(Console.ReadLine() ?? string.Empty);
             DisplayOriginalList(listOfPeople);
             LoadUserChoice(choice, listOfPeople);
             Console.WriteLine(Exit);
@@ -31,11 +31,13 @@ namespace Linq
         {
             Console.WriteLine(Choose);
             Console.WriteLine(MenuLines);
-            Console.WriteLine($"{Menu[0].PadRight(8, ' ')} {Menu[1].PadRight(13, ' ')} {Menu[2].PadRight(16, ' ')} {Menu[3]}");
+            Console.WriteLine(
+                $"{Menu[0].PadRight(8, ' ')} {Menu[1].PadRight(13, ' ')} {Menu[2].PadRight(16, ' ')} {Menu[3]}");
             Console.WriteLine(MenuLines);
 
             foreach (var item in MethodOptionsFactory.ListOfMethods())
-                Console.WriteLine($"{item.Id.PadRight(8, ' ')} {item.Name.PadRight(13, ' ')} {item.Type.PadRight(16, ' ')} {item.Description} ");
+                Console.WriteLine(
+                    $"{item.Id.PadRight(8, ' ')} {item.Name.PadRight(13, ' ')} {item.Type.PadRight(16, ' ')} {item.Description} ");
         }
 
         private static void DisplayOriginalList(IEnumerable<Person> people)
@@ -46,57 +48,69 @@ namespace Linq
             Console.WriteLine();
         }
 
-        private static void LoadUserChoice(string choice, IEnumerable<Person> people)
+        private static void LoadUserChoice(int choice, IEnumerable<Person> people)
         {
             switch (choice)
             {
-                case "1":
+                case 1:
                     LinqOrderBy.OrderByMethod(people);
                     break;
-                case "2":
+                case 2:
                     LinqWhere.WhereMethod(people);
                     break;
-                case "3":
+                case 3:
                     LinqSum.SumMethod(people);
                     break;
-                case "4":
+                case 4:
                     LinqOfType.OfTypeMethod(people);
                     break;
-                case "5":
+                case 5:
                     LinqSelect.SelectMethod(people);
                     break;
-                case "6":
+                case 6:
                     LinqAverage.AverageMethod(people);
                     break;
-                case "7":
+                case 7:
                     LinqCount.CountMethod(people);
                     break;
-                case "8":
+                case 8:
                     LinqMax.MaxMethod(people);
                     break;
-                case "9":
+                case 9:
                     LinqMin.MinMethod(people);
                     break;
-                case "10":
+                case 10:
                     LinqAll.AllMethod(people);
                     break;
-                case "11":
+                case 11:
                     LinqAny.AnyMethod(people);
                     break;
-                case "12":
+                case 12:
                     LinqToDictionary.ToDictionaryMethod(people);
                     break;
-                case "13":
-                    Console.WriteLine("7");
+                case 13:
+                    LinqElementAt.ElementAtMethod(people);
                     break;
-                case "14":
-                    Console.WriteLine("7");
+                case 14:
+                    LinqFirst.FirstMethod(people);
                     break;
-                case "15":
-                    Console.WriteLine("7");
+                case 15:
+                    LinqFirstOrDefault.FirstOrDefaultMethod(people);
                     break;
-                case "16":
-                    Console.WriteLine("7");
+                case 16:
+                    LinqLast.LastMethod(people);
+                    break;
+                case 17:
+                    LinqLastOrDefault.LastOrDefaultMethod(people);
+                    break;
+                case 18:
+                    Console.WriteLine("xxx");
+                    break;
+                case 19:
+                    Console.WriteLine("xxx");
+                    break;
+                case 20:
+                    Console.WriteLine("xxx");
                     break;
                 default:
                     Console.WriteLine("Make a choice");
