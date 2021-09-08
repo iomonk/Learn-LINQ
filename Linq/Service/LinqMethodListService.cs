@@ -130,24 +130,59 @@ namespace Linq.Service
             new MethodOptions
             {
                 Id = "18",
-                Name = "xxx",
-                Type = "xxx",
-                Description = "xxx"
+                Name = "Reverse",
+                Type = "Deferred",
+                Description = "Inverts the order of the elements in a sequence."
             },
             new MethodOptions
             {
                 Id = "19",
+                Name = "Skip",
+                Type = "Deferred",
+                Description = "Bypasses a specified number of elements in a sequence and then returns the remaining elements. (Slip, SkipLast and SkipWhile)"
+            },
+            new MethodOptions
+            {
+                Id = "20",
+                Name = "Take",
+                Type = "Deferred",
+                Description = "Returns a specified number of contiguous elements from the start of a sequence. (Take, TakeLast and TakeWhile)"
+            },
+            new MethodOptions
+            {
+                Id = "21",
                 Name = "xxx",
                 Type = "xxx",
                 Description = "xxx"
             },
             new MethodOptions
             {
-                Id = "20",
+                Id = "22",
                 Name = "xxx",
                 Type = "xxx",
                 Description = "xxx"
-            }
+            },
+            new MethodOptions
+            {
+                Id = "23",
+                Name = "xxx",
+                Type = "xxx",
+                Description = "xxx"
+            },
+            new MethodOptions
+            {
+                Id = "24",
+                Name = "xxx",
+                Type = "xxx",
+                Description = "xxx"
+            },
+            new MethodOptions
+            {
+                Id = "25",
+                Name = "xxx",
+                Type = "xxx",
+                Description = "xxx"
+            },
         };
 
         public static List<MethodOptions> ListOfMethods()

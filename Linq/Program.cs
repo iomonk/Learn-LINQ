@@ -103,12 +103,27 @@ namespace Linq
                     LinqLastOrDefault.LastOrDefaultMethod(people);
                     break;
                 case 18:
-                    Console.WriteLine("xxx");
+                    LinqReverse.ReverseMethod(people);
                     break;
                 case 19:
-                    Console.WriteLine("xxx");
+                    LinqSkip.SkipMethod(people);
                     break;
                 case 20:
+                    LinqTake.TakeMethod(people);
+                    break;
+                case 21:
+                    Console.WriteLine("xxx");
+                    break;
+                case 22:
+                    Console.WriteLine("xxx");
+                    break;
+                case 23:
+                    Console.WriteLine("xxx");
+                    break;
+                case 24:
+                    Console.WriteLine("xxx");
+                    break;
+                case 25:
                     Console.WriteLine("xxx");
                     break;
                 default:
