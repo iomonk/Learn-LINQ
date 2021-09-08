@@ -14,6 +14,7 @@ namespace Linq
         private const string MenuLines = "---------------------------------------------------";
         private const string OriginalList = "The list before the any of the methods are applied";
         private static readonly string[] Menu = {"Option", "Method Name", "Type of Method", "Description"};
+        private const string Exit = "Press any key to exit.";
 
         private static void Main()
         {
@@ -22,6 +23,8 @@ namespace Linq
             var choice = Console.ReadLine();
             DisplayOriginalList(listOfPeople);
             LoadUserChoice(choice, listOfPeople);
+            Console.WriteLine(Exit);
+            Console.ReadLine();
         }
 
         private static void MainMenu()
@@ -75,15 +78,24 @@ namespace Linq
                     LinqMin.MinMethod(people);
                     break;
                 case "10":
-                    Console.WriteLine("7");
+                    LinqAll.AllMethod(people);
                     break;
                 case "11":
-                    Console.WriteLine("7");
+                    LinqAny.AnyMethod(people);
                     break;
                 case "12":
-                    Console.WriteLine("7");
+                    LinqToDictionary.ToDictionaryMethod(people);
                     break;
                 case "13":
+                    Console.WriteLine("7");
+                    break;
+                case "14":
+                    Console.WriteLine("7");
+                    break;
+                case "15":
+                    Console.WriteLine("7");
+                    break;
+                case "16":
                     Console.WriteLine("7");
                     break;
                 default:

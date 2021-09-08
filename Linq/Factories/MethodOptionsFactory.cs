@@ -71,6 +71,27 @@ namespace Linq.Factories
                 Type = "Iterative",
                 Description = "Returns the minimum value in a sequence of values."
             },
+            new MethodOptions
+            {
+                Id = "10",
+                Name = "All",
+                Type = "Iterative",
+                Description = "Determines whether all elements of a sequence satisfy a condition."
+            },
+            new MethodOptions
+            {
+                Id = "11",
+                Name = "Any",
+                Type = "Iterative",
+                Description = "Determines whether any element of a sequence exists or satisfies a condition."
+            },
+            new MethodOptions
+            {
+                Id = "12",
+                Name = "ToDictionary",
+                Type = "Deferred",
+                Description = "Creates a Dictionary<TKey,TValue> from an IEnumerable<T>."
+            },
         };
 
         public static List<MethodOptions> ListOfMethods()
