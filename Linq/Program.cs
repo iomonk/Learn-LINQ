@@ -13,8 +13,8 @@ namespace Linq
         // strings used throughout the Program Class
         private const string Choose = "Choose a Linq Method";
         private const string MenuLines = "---------------------------------------------------";
-        private static readonly string[] Menu = new[] {"Option", "Method Name", "Type of Method", "Description"};
         private const string OriginalList = "The list before the any of the methods are applied";
+        private static readonly string[] Menu = {"Option", "Method Name", "Type of Method", "Description"};
 
         private static void Main()
         {
@@ -31,23 +31,19 @@ namespace Linq
             Console.WriteLine(MenuLines);
             Console.WriteLine($"{Menu[0].PadRight(8, ' ')} {Menu[1].PadRight(13, ' ')} {Menu[2].PadRight(16, ' ')} {Menu[3]}");
             Console.WriteLine(MenuLines);
-            Console.WriteLine($"{MethodOptionsFactory.OrderByOption().Id.PadRight(8, ' ')} {MethodOptionsFactory.OrderByOption().Name.PadRight(13, ' ')} {MethodOptionsFactory.OrderByOption().Type.PadRight(16, ' ')} {MethodOptionsFactory.OrderByOption().Description} ");
-            Console.WriteLine($"{MethodOptionsFactory.WhereOption().Id.PadRight(8, ' ')} {MethodOptionsFactory.WhereOption().Name.PadRight(13, ' ')} {MethodOptionsFactory.WhereOption().Type.PadRight(16, ' ')} {MethodOptionsFactory.WhereOption().Description} ");
-            Console.WriteLine($"{MethodOptionsFactory.SumOption().Id.PadRight(8, ' ')} {MethodOptionsFactory.SumOption().Name.PadRight(13, ' ')} {MethodOptionsFactory.SumOption().Type.PadRight(16, ' ')} {MethodOptionsFactory.SumOption().Description} ");
-            Console.WriteLine($"{MethodOptionsFactory.OfTypeOption().Id.PadRight(8, ' ')} {MethodOptionsFactory.OfTypeOption().Name.PadRight(13, ' ')} {MethodOptionsFactory.OfTypeOption().Type.PadRight(16, ' ')} {MethodOptionsFactory.OfTypeOption().Description} ");
+
+            foreach (var item in MethodOptionsFactory.ListOfMethods())
+                Console.WriteLine($"{item.Id.PadRight(8, ' ')} {item.Name.PadRight(13, ' ')} {item.Type.PadRight(16, ' ')} {item.Description} ");
         }
-        
+
         private static void DisplayOriginalList(IEnumerable<Person> people)
         {
             Console.WriteLine(OriginalList);
-            var personList = people.ToList();
-            foreach (var p in personList)
-            {
-                WriteLineService.WriteLine(p);
-            }
+
+            foreach (var p in people) WriteLineService.WriteLine(p);
             Console.WriteLine();
         }
-        
+
         private static void LoadUserChoice(string choice, IEnumerable<Person> people)
         {
             switch (choice)
@@ -65,7 +61,7 @@ namespace Linq
                     LinqOfType.OfTypeMethod(people);
                     break;
                 case "5":
-                    Console.WriteLine("5");
+                    LinqSelect.SelectMethod(people);
                     break;
                 case "6":
                     Console.WriteLine("6");
