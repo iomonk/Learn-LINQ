@@ -7,7 +7,8 @@ namespace Linq.LinqMethods
 {
     public static class LinqAll
     {
-        private const string AfterAllStr = "The list after the 'All' method is applied. Will check to see if all ages are greater than 0";
+        private const string AfterAllStr =
+            "The list after the 'All' method is applied. Will check to see if all ages are greater than 0";
 
         public static void AllMethod(IEnumerable<Person> personList)
         {

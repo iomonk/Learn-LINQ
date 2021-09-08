@@ -7,7 +7,8 @@ namespace Linq.LinqMethods
 {
     public static class LinqCount
     {
-        private const string AfterCountStr = "The list after the 'Count' method is applied. There are 100 elements in the list.";
+        private const string AfterCountStr =
+            "The list after the 'Count' method is applied. There are 100 elements in the list.";
 
         public static void CountMethod(IEnumerable<Person> personList)
         {

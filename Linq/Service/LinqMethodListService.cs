@@ -139,14 +139,16 @@ namespace Linq.Service
                 Id = "19",
                 Name = "Skip",
                 Type = "Deferred",
-                Description = "Bypasses a specified number of elements in a sequence and then returns the remaining elements. (Slip, SkipLast and SkipWhile)"
+                Description =
+                    "Bypasses a specified number of elements in a sequence and then returns the remaining elements. (Slip, SkipLast and SkipWhile)"
             },
             new MethodOptions
             {
                 Id = "20",
                 Name = "Take",
                 Type = "Deferred",
-                Description = "Returns a specified number of contiguous elements from the start of a sequence. (Take, TakeLast and TakeWhile)"
+                Description =
+                    "Returns a specified number of contiguous elements from the start of a sequence. (Take, TakeLast and TakeWhile)"
             },
             new MethodOptions
             {

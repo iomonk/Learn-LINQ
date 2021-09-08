@@ -7,7 +7,8 @@ namespace Linq.LinqMethods
 {
     public static class LinqMax
     {
-        private const string AfterMaxStr = "The list after the 'Max' method is applied. Returns the oldest age in the list.";
+        private const string AfterMaxStr =
+            "The list after the 'Max' method is applied. Returns the oldest age in the list.";
 
         public static void MaxMethod(IEnumerable<Person> personList)
         {

@@ -7,7 +7,8 @@ namespace Linq.LinqMethods
 {
     public static class LinqMin
     {
-        private const string AfterMinStr = "The list after the 'Min' method is applied. Returns the youngest age in the list.";
+        private const string AfterMinStr =
+            "The list after the 'Min' method is applied. Returns the youngest age in the list.";
 
         public static void MinMethod(IEnumerable<Person> personList)
         {

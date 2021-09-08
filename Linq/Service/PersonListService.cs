@@ -58,6 +58,7 @@ namespace Linq.Service
         public static IEnumerable<Person> MakePeople()
         {
             var listOfPeople = new List<Person>();
+            listOfPeople.Clear();
 
             for (var i = 1; i <= 100; i++)
             {

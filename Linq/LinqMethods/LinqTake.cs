@@ -8,9 +8,14 @@ namespace Linq.LinqMethods
 {
     public static class LinqTake
     {
-        private const string AfterTakeStr = "The list after the 'Take' method is applied. Takes and displays only the first 10 elements";
-        private const string AfterTakeLastStr = "The list after the 'Take' method is applied. Takes and displays only the last 5 elements.";
-        private const string AfterTakeWhileStr = "The list after the 'Take' method is applied. Takes and displays all elements until the condition is met.";
+        private const string AfterTakeStr =
+            "The list after the 'Take' method is applied. Takes and displays only the first 10 elements";
+
+        private const string AfterTakeLastStr =
+            "The list after the 'Take' method is applied. Takes and displays only the last 5 elements.";
+
+        private const string AfterTakeWhileStr =
+            "The list after the 'Take' method is applied. Takes and displays all elements until the condition is met.";
 
         public static void TakeMethod(IEnumerable<Person> personList)
         {
@@ -27,7 +32,7 @@ namespace Linq.LinqMethods
             foreach (var p in result) WriteLineService.WriteLine(p);
             Console.WriteLine();
         }
-        
+
         private static void AfterTakeLast(IEnumerable<Person> personList)
         {
             Console.WriteLine(AfterTakeLastStr);
@@ -35,7 +40,7 @@ namespace Linq.LinqMethods
             foreach (var p in result) WriteLineService.WriteLine(p);
             Console.WriteLine();
         }
-        
+
         private static void AfterTakeWhile(IEnumerable<Person> personList)
         {
             Console.WriteLine(AfterTakeWhileStr);

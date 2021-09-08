@@ -8,7 +8,8 @@ namespace Linq.LinqMethods
 {
     public static class LinqReverse
     {
-        private const string AfterReverseStr = "The list after the 'Reverse' method is applied. Reverses the order of the list.";
+        private const string AfterReverseStr =
+            "The list after the 'Reverse' method is applied. Reverses the order of the list.";
 
         public static void ReverseMethod(IEnumerable<Person> personList)
         {

@@ -7,7 +7,8 @@ namespace Linq.LinqMethods
 {
     public static class LinqFirst
     {
-        private const string AfterFirstStr = "The list after the 'First' method is applied. Will return the first element in the list.";
+        private const string AfterFirstStr =
+            "The list after the 'First' method is applied. Will return the first element in the list.";
 
         public static void FirstMethod(IEnumerable<Person> personList)
         {
@@ -18,7 +19,8 @@ namespace Linq.LinqMethods
         {
             Console.WriteLine(AfterFirstStr);
             var result = personList.First();
-            Console.WriteLine($"{nameof(result.Id)}: {result.Id} {nameof(result.FirstName)}: {result.FirstName} {nameof(result.LastName)}: {result.LastName}: {nameof(result.Age)}: {result.Age} {nameof(result.Location)}: {result.Location}");
+            Console.WriteLine(
+                $"{nameof(result.Id)}: {result.Id} {nameof(result.FirstName)}: {result.FirstName} {nameof(result.LastName)}: {result.LastName}: {nameof(result.Age)}: {result.Age} {nameof(result.Location)}: {result.Location}");
         }
     }
 }

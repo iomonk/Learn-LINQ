@@ -7,7 +7,8 @@ namespace Linq.LinqMethods
 {
     public static class LinqAverage
     {
-        private const string AfterAverageStr = "The list after the 'Average' method is applied. Computes the average of all ages.";
+        private const string AfterAverageStr =
+            "The list after the 'Average' method is applied. Computes the average of all ages.";
 
         public static void AverageMethod(IEnumerable<Person> personList)
         {
