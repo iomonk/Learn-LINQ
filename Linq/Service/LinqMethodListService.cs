@@ -151,38 +151,10 @@ namespace Linq.Service
             new MethodOptions
             {
                 Id = "21",
-                Name = "xxx",
-                Type = "xxx",
-                Description = "xxx"
-            },
-            new MethodOptions
-            {
-                Id = "22",
-                Name = "xxx",
-                Type = "xxx",
-                Description = "xxx"
-            },
-            new MethodOptions
-            {
-                Id = "23",
-                Name = "xxx",
-                Type = "xxx",
-                Description = "xxx"
-            },
-            new MethodOptions
-            {
-                Id = "24",
-                Name = "xxx",
-                Type = "xxx",
-                Description = "xxx"
-            },
-            new MethodOptions
-            {
-                Id = "25",
-                Name = "xxx",
-                Type = "xxx",
-                Description = "xxx"
-            },
+                Name = "Distinct",
+                Type = "Deferred",
+                Description = "Returns distinct elements from a sequence."
+            }
         };
 
         public static List<MethodOptions> ListOfMethods()

@@ -112,19 +112,7 @@ namespace Linq
                     LinqTake.TakeMethod(people);
                     break;
                 case 21:
-                    Console.WriteLine("xxx");
-                    break;
-                case 22:
-                    Console.WriteLine("xxx");
-                    break;
-                case 23:
-                    Console.WriteLine("xxx");
-                    break;
-                case 24:
-                    Console.WriteLine("xxx");
-                    break;
-                case 25:
-                    Console.WriteLine("xxx");
+                    LinqDistinct.DistinctMethod(people);
                     break;
                 default:
                     Console.WriteLine("Make a choice");
