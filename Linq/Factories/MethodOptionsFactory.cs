@@ -5,7 +5,7 @@ namespace Linq.Factories
 {
     public static class MethodOptionsFactory
     {
-        private static readonly List<MethodOptions> _methodOptionsList = new()
+        private static readonly List<MethodOptions> MethodOptionsList = new()
         {
             new MethodOptions
             {
@@ -47,7 +47,7 @@ namespace Linq.Factories
 
         public static List<MethodOptions> ListOfMethods()
         {
-            return _methodOptionsList;
+            return MethodOptionsList;
         }
     }
 }
